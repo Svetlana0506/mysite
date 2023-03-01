@@ -1,11 +1,17 @@
 let AboutButton = document.querySelector('.about-button');
 let loginPopUp = document.querySelector('.login-popup');
+let ButtonClosse = document.querySelector('.close-button')
 
-AboutButton.addEventListener('click',showPopup);
-
-function showPopup(evt) {
-    console.log(evt);
-    evt.preventDefault();
-
-    loginPopUp.classList.toggle('show-popup');
+ 
+function showpopup() {
+    loginPopUp.classList.add('show-popup');
 };
+
+
+function clossepopup() {
+    loginPopUp.classList.remove('show-popup');
+};
+
+AboutButton.addEventListener('click',showpopup)
+
+ButtonClosse.addEventListener('click',clossepopup)

@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0;
 }
 
 /*header*/
@@ -84,6 +85,19 @@
     cursor: pointer;  
 }
 
+.close-button {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    position: absolute;
+    right: -35px;
+    top: -85px;
+    margin: 3px 3px 0 3px;
+    border: none;
+    padding: 0;
+    background-image: url('../../img/close.svg');
+}
+
 /*Popup*/
 .login-popup {
     display: none;
@@ -99,7 +113,7 @@
     padding: 26px 28px 56px 28px;
     background: #FFFFFF;
     border: 1px solid #213B7E;
-    background-color:rgb #d3d3d3
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
 }
 
 .login-sait {
@@ -109,41 +123,44 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
+    margin: 26px 0 0 0;
     color: #000000;
-    text-align: center;
-    padding: 0 0 36px;   
+    text-align: center;   
 }
 
 .login-form {
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .login-form > input {
     width: 100%;
-    max-width: 500px;
+    max-width: 444px;
     min-height: 55px;
     border: 1px solid #808080;
-    padding: 0;
+    padding: 17px 14px 10px 0;
     margin: 0 28px;
     margin-top: 56px;
+    padding-left: 14px;
     box-sizing: border-box;  
 }
 
 .login-input {
     font-family: 'Roboto';
-    width: 444px;
-    height: 55px;
     background-color: #FFFFFF;
     border:1px solid #808080;
     font-weight: 400;
     font-size: 24px;
-    line-height: 28px;
     color: #808080;
     padding: 17px 14px 10px 0px ;
+    margin-left: 0 28px;
 }
 
+.login-input:focus {
+    color:#000000
+}
 
 .login-password {
     font-family: 'Roboto';
@@ -155,10 +172,13 @@
     font-size: 24px;
     line-height: 28px;
     color: #808080;
-    padding-left: 14px
-    margin-left: 90px 28px 56px 28px;
+    padding-left: 14px;
     border: none;
     margin-top: 56px;
+}
+
+.login-password:focus {
+    color:#000000
 }
 
 .popup-button {
@@ -206,23 +226,17 @@
     margin:0 auto;
     flex-grow: 1;
     box-sizing: border-box;
-}
-
-.main-st {
-    max-width: 1202px;
-    min-height: 384px;
-    margin:0 auto;
-    flex-grow: 1;
-    box-sizing: border-box;
-    padding-left: 49px;
+    padding: 0 16px;
 }
 
 .main-text {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
-    margin: 33px 0;
+    font-size: 28.5px;
+    margin: 0;
+    margin-top: 33px;
+    line-height: 35px;
 }
 
 .photo {
@@ -230,70 +244,46 @@
     max-width: 523px;
     height: 316px;
     object-fit: cover;
-    margin-left: 0 119px;
+    margin-top: 25px;
 }
 
 .heading {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 25px;
+    width: 221px;
+    line-height: 29px;
+    margin: 15px 0 10px;
+    padding: 0;
+    color: #000000;
 }
 
+.headings {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    width: 226px;
+    padding: 0;
+    margin: 15px 0 10px;
+    color: #000000;
+}
 .text-li {
-    width: 100%;
     max-width:634px;
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    margin: 15px 0 10px 0;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding: 0;
+    line-height: 21px;
+    color: #000000;
 }
 
 .em-m {
   color: rgba(207,85,16,1);
 }
 
-/*students*/
-
-.main_text {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 31px;
-    line-height: 37px;
-}
-
-.name-student {
-    display: block;
-    align-items: center;
-    text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.foto-student {
-    width: 200px;
-    height: 270px;
-    background: #86C6F4;
-}
-
-.students {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 24px;
-}
-
-.student {
-    padding-left: 50px;
-}
-
-.studentt {
-    padding-left: 51px;
-}
 
 /*footer*/
 
@@ -335,6 +325,12 @@
     opacity: 1;
     cursor: pointer;
 }
+
+
+::selection {
+     background-color:#000000;
+}
+
  @media (max-width: 650px) {
      .header {
         grid-template-columns: 1fr;
@@ -349,3 +345,5 @@
          flex-direction: column;
       }
     }
+
+   

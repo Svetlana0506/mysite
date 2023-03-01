@@ -1,0 +1,68 @@
+/*main*/
+
+.main {
+    width: 100%;
+    max-width: 1268px; 
+    margin: 0 auto;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.yandex-map {
+   width: 100%;
+   max-width: 1268px;
+   min-height: 370px;
+   margin: 0 auto;
+   box-sizing: border-box;
+   border-style: none;
+   padding: 0;
+}
+
+.text-main {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    width: 185px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 288px;
+    box-sizing: border-box;
+}
+
+.text-in {
+    width: 439px;
+    height: 63px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+    margin-left: 288px;
+    text-decoration: underline;
+    box-sizing: border-box;
+}
+
+.main_text {
+    width: 236px;
+    margin-left: 286px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    margin-top: 33px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 827px) {
+    .text-main {
+        margin-left: 0;
+    }
+    .main_text {
+        margin-left: 0;
+    }
+    .text-in {
+        margin-left: 0;
+    }
+}

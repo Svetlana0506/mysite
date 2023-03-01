@@ -1,0 +1,116 @@
+/*main*/
+
+.main-st {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1202px;
+    margin: 0 auto;
+    padding: 0 15px; 
+}
+.main_text {
+    display: flex;
+    align-items: center;
+    max-width:494px;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 36px;
+    margin-top: 37px;
+    margin-bottom: 24px;
+}
+
+.name-student {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.name-student_V {
+    width: 156px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 8px 0 0 0;
+    color: #000000;
+}
+
+.name-student_V:hover {
+    color: #000000;
+    cursor: pointer;
+}
+
+.name-student_M {
+    width: 136px;
+    height: 46px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 8px 0 0 0;
+    color: #000000;
+}
+
+.name-student_M:hover {
+    color:#000000;
+    cursor: pointer;
+}
+
+.foto-student {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 270px;
+    position: relative;
+    background: #86C6F4;
+}
+
+.foto-student:hover {
+    color: #86C6F4;
+    cursor: pointer;
+}
+
+.students {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 50px;
+    width: 100%;
+    max-width:  1202px;
+    padding: 0;
+    text-decoration: none;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+}
+
+.student {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+    position: relative;
+}
+
+.student-new {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 2px 0.28px 1px 5px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    text-decoration: none;
+    position: relative;
+    top: -336px;
+    left: 64px;
+    background: #3AA828;
+}
