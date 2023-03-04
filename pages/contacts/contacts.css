@@ -32,7 +32,7 @@
 }
 
 .text-in {
-    width: 439px;
+    max-width: 439px;
     height: 63px;
     font-family: 'Roboto';
     font-style: normal;
@@ -45,6 +45,8 @@
 }
 
 .main_text {
+    font-family: 'Roboto';
+    font-style: normal;
     width: 236px;
     margin-left: 286px;
     font-weight: 700;
@@ -55,7 +57,7 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 827px) {
+@media (max-width: 650px) {
     .text-main {
         margin-left: 0;
     }

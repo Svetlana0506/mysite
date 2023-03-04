@@ -9,6 +9,8 @@
 }
 
 .main_text {
+    font-family: 'Roboto';
+    font-style: normal;
     display: flex;
     align-items: center;
     width: 147px;
@@ -21,6 +23,8 @@
 }
 
 .text-about {
+    font-family: 'Roboto';
+    font-style: normal;
     width: 288px;
     margin: 0;
     font-weight: 400;
